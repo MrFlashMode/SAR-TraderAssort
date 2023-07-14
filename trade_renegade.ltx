@@ -1,0 +1,275 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(renegade:2000)} supplies_5, {=actor_goodwill_ge(renegade:1500) =heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(renegade:1500)} supplies_4, {=actor_goodwill_ge(renegade:1000) =heavy_pockets_functor()} supplies_4, {=actor_goodwill_ge(renegade:1000)} supplies_3, {=actor_goodwill_ge(renegade:500) =heavy_pockets_functor()} supplies_3, {=actor_goodwill_ge(renegade:500)} supplies_2, {=actor_goodwill_ge(renegade:0) =heavy_pockets_functor()} supplies_2, {=actor_goodwill_ge(renegade:0)} supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_trasher
+
+[trade_generic_buy]:trasher
+
+[trade_generic_sell]:trasher
+
+[supplies_1]:common_stock
+;[Pistols]
+wpn_walter					= 1, 0.5
+wpn_walther_p99				= 1, 0.5 ;впоследствии убрать
+wpn_tt33					= 1, 0.5
+
+;[Rifle]
+wpn_bm16					= 1, 0.5
+wpn_toz34_obrez				= 1, 0.5
+wpn_toz106					= 1, 0.5
+wpn_toz106_m1				= 1, 0.5
+wpn_kiparis					= 1, 0.5
+wpn_vz61					= 1, 0.5
+
+;[Explosives]
+grenade_f1					= 1, 0.5
+grenade_gd-05				= 1, 0.5
+grenade_rgd5				= 1, 0.5
+grenade_smoke				= 1, 0.5
+
+;[Melee]
+wpn_knife2					= 1, 0.5
+wpn_axe						= 1, 0.5
+
+;[Headgear]
+helm_rp_bala				= 1, 0.5
+helm_respirator				= 1, 0.5
+helm_hardhat				= 1, 0.5
+helm_respirator_old			= 1, 0.5
+helm_respirator_gp5			= 1, 0.5
+
+;[Outfits]
+redline_novice_outfit		= 1, 0.5
+
+;[Backpacks]
+itm_backpack				= 1, 0.5
+equ_kit_pack				= 1, 0.5
+ghillie_outfit				= 1, 0.5
+
+;[Drugs/Medicine]
+;adrenalin					= 1, 0.50
+akvatab						= 2, 0.75
+analgetic					= 2, 0.75
+antibio_chlor				= 2, 0.75
+antibio_sulfad				= 2, 0.75
+antiemetic					= 2, 0.75
+;antirad					= 2, 0.75
+antirad_cystamine			= 2, 0.75
+antirad_kalium				= 2, 0.75
+bandage						= 4, 0.75
+caffeine					= 2, 0.75
+;cocaine					= 2, 0.25
+;drug_anabiotic				= 1, 0.50
+drug_antidot				= 2, 0.75
+drug_booster				= 2, 0.75
+drug_coagulant				= 2, 0.75
+drug_psy_blockade			= 2, 0.75
+drug_radioprotector			= 2, 0.75
+drug_sleepingpills			= 2, 0.75
+glucose						= 2, 0.75
+glucose_s					= 2, 0.75
+jgut						= 4, 0.75
+medkit						= 2, 0.75
+;medkit_army				= 2, 0.50
+;medkit_scientic			= 2, 0.25
+;morphine					= 2, 0.75
+;rebirth					= 1, 0.25
+salicidic_acid				= 2, 0.75
+stimpack					= 2, 0.75
+;stimpack_army				= 2, 0.50
+;stimpack_scientic			= 2, 0.25
+tetanus						= 2, 0.75
+yadylin						= 2, 0.75
+
+;[Cigs/Food/Drinks]
+beans						= 1, 0.5
+bread						= 1, 0.5
+chili						= 1, 0.5
+chocolate					= 1, 0.5
+conserva					= 1, 0.5
+corn						= 1, 0.5
+mint						= 1, 0.5
+nuts						= 1, 0.5
+protein						= 1, 0.5
+raisins						= 1, 0.5
+salmon						= 1, 0.5
+sausage						= 1, 0.5
+tomato						= 1, 0.5
+tushonka					= 1, 0.5
+;---
+beer						= 1, 0.5
+bottle_metal				= 1, 0.5
+energy_drink				= 1, 0.5
+flask						= 1, 0.5
+mineral_water				= 1, 0.5
+vodka						= 1, 0.5
+vodka2						= 1, 0.5
+vodka_quality				= 1, 0.5
+water_drink					= 1, 0.5
+;---
+cigar						= 1, 0.5
+cigar1						= 1, 0.5
+cigar2						= 1, 0.5
+cigar3						= 1, 0.5
+cigarettes					= 1, 0.5
+cigarettes_lucky			= 1, 0.5
+cigarettes_russian			= 1, 0.5
+tobacco						= 1, 0.5
+hand_rolling_tobacco		= 1, 0.5
+
+;[Fuels]
+kerosene					= 1, 1
+charcoal					= 1, 1
+explo_jerrycan_fuel			= 1, 1
+explo_balon_gas				= 1, 1
+
+;[Devices]
+box_matches					= 1, 1
+bolts_pack					= 1, 1
+batteries_dead				= 2, 1
+detector_geiger				= 1, 0.5
+detector_radio				= 1, 0.5
+detector_simple				= 1, 0.5
+device_flashlight			= 1, 0.5
+device_pda_1				= 1, 0.5
+lead_box					= 1, 0.5
+af_iam						= 1, 0.5
+af_oxygen_tank_1			= 1, 0.5
+af_mask_filter_1			= 1, 0.5
+device_glowstick			= 1, 0.5
+device_glowstick_red		= 1, 0.5
+device_glowstick_orange		= 1, 0.5
+device_glowstick_blue		= 1, 0.5
+wpn_binoc_inv				= 1, 0.5
+itm_actor_backpack			= 1, 0.5
+
+;[Camping]
+army_bowler					= 1, 1
+compression_bag				= 1, 1
+cooking						= 1, 1
+fieldcooker					= 1, 1
+itm_sleepbag				= 1, 1
+itm_tent					= 1, 1
+
+[supplies_2]:supplies_1
+;[Pistols]
+wpn_aps_bas					= 1, 0.5
+
+;[Rifle]
+wpn_wincheaster1300			= 1, 0.5
+wpn_mp5_alt					= 1, 0.5
+wpn_pp2000					= 1, 0.5
+wpn_fort500					= 1, 0.5
+wpn_k98						= 1, 0.5
+wpn_m870breacher_m			= 1, 0.5
+
+;[Headgear]
+helm_ppm88					= 1, 0.5
+
+;[Outfits]
+renegademerc_outfit			= 1, 0.5
+
+;[Backpacks]
+equ_small_pack				= 1, 0.5
+
+;[Devices]
+device_torch_dummy			= 1, 0.5
+
+[supplies_3]:supplies_2
+;[Pistols]
+wpn_colt1911_n				= 1, 0.5
+
+;[Rifle]
+wpn_spas12					= 1, 0.5
+wpn_protecta				= 1, 0.5
+wpn_sks_b					= 1, 0.5
+wpn_ak74u_n1				= 1, 0.5
+wpn_m16						= 1, 0.5
+
+;[Explosives]
+grenade_rgn_impact			= 1, 0.5
+grenade_rgo_impact			= 1, 0.5
+
+;[Melee]
+wpn_knife4					= 1, 0.5
+
+;[Outfits]
+trenchcoat_green_outfit		= 1, 0.5
+trenchcoat_brown_outfit		= 1, 0.5
+
+;[Backpacks]
+equ_small_military_pack		= 1, 0.5
+
+;[Devices]
+device_pda_2				= 1, 0.5
+detector_advanced			= 1, 0.5
+device_torch_nv_1			= 1, 0.5
+af_aac						= 1, 0.5
+af_oxygen_tank_2			= 1, 0.5
+af_mask_filter_2			= 1, 0.5
+
+[supplies_4]:supplies_3
+
+;[Pistols]
+wpn_colt1911_camo			= 1, 0.5
+
+;[Rifle]
+wpn_saiga12s				= 1, 0.5
+wpn_akms_bas				= 1, 0.5
+wpn_ump45					= 1, 0.5
+
+;[Headgear]
+helm_exo					= 1, 0.5
+
+;[Outfits]
+renegade_scientific_outfit	= 1, 0.5
+
+;[Backpacks]
+equ_tourist_pack			= 1, 0.5
+
+;[Devices]
+device_torch_nv_2			= 1, 0.5
+
+[supplies_5]:supplies_4
+;[Unique]
+wpn_ks23_kaban				= 1, 0.25
+wpn_ks23_kaban_kab_up		= 1, 0.25
+wpn_tt33_modern				= 1, 0.25
+
+;[Rifles]
+wpn_vepr					= 1, 0.5
+wpn_9a91					= 1, 0.5
+wpn_svt40_modern			= 1, 0.5
+
+;[Explosions]
+wpn_m79						= 1, 0.5
+
+;[Melee]
+wpn_knife8					= 1, 0.5
+
+;[Headgear]
+helm_metro					= 1, 0.5
+
+;[Outfits]
+renegade_exo_outfit			= 1, 0.5
+
+;[Backpacks]
+equ_military_pack			= 1, 0.5
+exo_power_supply			= 1, 0.5
+
+;[Devices]
+device_pda_3				= 1, 0.5
+detector_elite				= 1, 0.5
+device_torch_nv_3			= 1, 0.5
+af_aam						= 1, 0.5
+af_oxygen_tank_3			= 1, 0.5
+af_mask_filter_3			= 1, 0.5
+batteries_exo				= 1, 0.5
