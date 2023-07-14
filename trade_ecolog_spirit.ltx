@@ -1,0 +1,67 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_barman
+
+[trade_generic_buy]:barman
+
+[trade_generic_sell]:barman
+
+[supplies_1]:common_stock
+;[Cigs/Food/Drinks]
+beans						= 5, 0.75
+bread						= 5, 0.75
+chili						= 5, 0.75
+chocolate					= 5, 0.75
+conserva					= 5, 0.75
+corn						= 5, 0.75
+mint						= 5, 0.75
+nuts						= 5, 0.75
+protein						= 5, 0.75
+raisins						= 5, 0.75
+salmon						= 5, 0.75
+sausage						= 5, 0.75
+tomato						= 5, 0.75
+tushonka					= 5, 0.75
+;---
+beer						= 5, 0.75
+bottle_metal				= 5, 0.75
+energy_drink				= 5, 0.75
+flask						= 5, 0.75
+mineral_water				= 5, 0.75
+vodka						= 5, 0.75
+vodka2						= 5, 0.75
+vodka_quality				= 5, 0.75
+water_drink					= 5, 0.75
+;---
+cigar						= 5, 0.75
+cigar1						= 5, 0.75
+cigar2						= 5, 0.75
+cigar3						= 5, 0.75
+cigarettes					= 5, 0.75
+cigarettes_lucky			= 5, 0.75
+cigarettes_russian			= 5, 0.75
+tobacco						= 5, 0.75
+hand_rolling_tobacco		= 5, 0.75
+
+;[Fuels]
+kerosene					= 1, 1
+charcoal					= 1, 1
+explo_jerrycan_fuel			= 1, 1
+explo_balon_gas				= 1, 
+
+;[Camping]
+army_bowler					= 1, 1
+compression_bag				= 1, 1
+cooking						= 1, 1
+fieldcooker					= 1, 1
+itm_sleepbag				= 1, 1
+itm_tent					= 1, 1
