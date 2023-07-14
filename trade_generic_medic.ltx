@@ -1,0 +1,90 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy 
+sell_condition = trade_generic_sell
+buy_supplies = {=drugkit_task_done()} supplies_2, supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_medic
+
+[trade_generic_buy]:medic
+
+[trade_generic_sell]:medic
+
+[supplies_1]:common_stock
+;[Drugs/Medicine]
+adrenalin                            = 2, 0.75
+akvatab                              = 4, 0.75
+analgetic                            = 4, 0.75
+antibio_chlor                        = 4, 0.75
+antibio_sulfad                       = 4, 0.75
+antiemetic                           = 4, 0.75
+antirad                              = 4, 0.75
+antirad_cystamine                    = 4, 0.75
+antirad_kalium                       = 4, 0.75
+bandage                              = 8, 0.75
+caffeine                             = 4, 0.75
+cocaine                              = 4, 0.75
+drug_anabiotic                       = 2, 0.75
+drug_antidot                         = 4, 0.75
+drug_booster                         = 4, 0.75
+drug_coagulant                       = 4, 0.75
+drug_psy_blockade                    = 4, 0.75
+drug_radioprotector                  = 4, 0.75
+drug_sleepingpills                   = 4, 0.75
+glucose                              = 4, 0.75
+glucose_s                            = 4, 0.75
+jgut                                 = 8, 0.75
+medkit                               = 4, 0.75
+medkit_army                          = 4, 0.75
+medkit_scientic                      = 4, 0.75
+morphine                             = 4, 0.75
+rebirth                              = 2, 0.75
+salicidic_acid                       = 4, 0.75
+stimpack                             = 4, 0.75
+stimpack_army                        = 4, 0.75
+stimpack_scientic                    = 4, 0.75
+survival_kit                         = 2, 0.75
+tetanus                              = 4, 0.75
+yadylin                              = 4, 0.75
+
+[supplies_2]:supplies_1
+;[Drugs/Medicine]
+adrenalin                            = 2, 0.75
+akvatab                              = 4, 0.75
+analgetic                            = 4, 0.75
+antibio_chlor                        = 4, 0.75
+antibio_sulfad                       = 4, 0.75
+antiemetic                           = 4, 0.75
+antirad                              = 4, 0.75
+antirad_cystamine                    = 4, 0.75
+antirad_kalium                       = 4, 0.75
+bandage                              = 8, 0.75
+caffeine                             = 4, 0.75
+cocaine                              = 4, 0.75
+drug_anabiotic                       = 2, 0.75
+drug_antidot                         = 4, 0.75
+drug_booster                         = 4, 0.75
+drug_coagulant                       = 4, 0.75
+drug_psy_blockade                    = 4, 0.75
+drug_radioprotector                  = 4, 0.75
+drug_sleepingpills                   = 4, 0.75
+glucose                              = 4, 0.75
+glucose_s                            = 4, 0.75
+jgut                                 = 8, 0.75
+medkit                               = 4, 0.75
+medkit_army                          = 4, 0.75
+medkit_scientic                      = 4, 0.75
+morphine                             = 4, 0.75
+rebirth                              = 2, 0.75
+salicidic_acid                       = 4, 0.75
+stimpack                             = 4, 0.75
+stimpack_army                        = 4, 0.75
+stimpack_scientic                    = 4, 0.75
+survival_kit                         = 2, 0.75
+tetanus                              = 4, 0.75
+yadylin                              = 4, 0.75
