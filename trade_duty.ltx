@@ -1,0 +1,220 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy
+sell_condition = trade_generic_sell
+buy_supplies = {=actor_goodwill_ge(dolg:2000)} supplies_5, {=actor_goodwill_ge(dolg:1500) =heavy_pockets_functor()} supplies_5, {=actor_goodwill_ge(dolg:1500)} supplies_4, {=actor_goodwill_ge(dolg:1000) =heavy_pockets_functor()} supplies_4, {=actor_goodwill_ge(dolg:1000)} supplies_3, {=actor_goodwill_ge(dolg:500) =heavy_pockets_functor()} supplies_3, {=actor_goodwill_ge(dolg:500)} supplies_2, {=actor_goodwill_ge(dolg:0) =heavy_pockets_functor()} supplies_2, {=actor_goodwill_ge(dolg:0)} supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_supplier
+
+[trade_generic_buy]:supplier
+
+[trade_generic_sell]:supplier
+
+[supplies_1]:common_stock
+
+;[Pistols]
+wpn_fort					= 1, 0.5
+wpn_pl15					= 1, 0.5
+wpn_mp443					= 1, 0.5
+wpn_pmm						= 1, 0.5
+wpn_gsh18					= 1, 0.5
+
+;[Rifle]
+wpn_mp133_bas				= 1, 0.5
+wpn_wincheaster1300			= 1, 0.5
+wpn_fort500					= 1, 0.5
+wpn_bizon					= 1, 0.5
+wpn_vityaz					= 1, 0.5
+wpn_ak74u_n1				= 1, 0.5
+
+;[Explosives]
+grenade_f1					= 1, 0.5
+grenade_gd-05				= 1, 0.5
+grenade_rgd5				= 1, 0.5
+grenade_smoke				= 1, 0.5
+
+;[Melee]
+wpn_knife					= 1, 0.5
+wpn_axe2					= 1, 0.5
+
+;[Headgear]
+helm_respirator				= 1, 0.5
+helm_respirator_old			= 1, 0.5
+helm_respirator_gp5			= 1, 0.5
+
+;[Outfits]
+dolg_novice_outfit			= 1, 0.5
+dolg_scout_outfit			= 1, 0.5
+dolg_outfit					= 1, 0.5
+
+;[Backpacks]
+itm_backpack				= 1, 0.5
+equ_kit_pack				= 1, 0.5
+ghillie_outfit				= 1, 0.5
+
+;[Fuels]
+kerosene					= 1, 1
+charcoal					= 1, 1
+explo_jerrycan_fuel			= 1, 1
+explo_balon_gas				= 1, 1
+
+;[Devices]
+box_matches					= 1, 1
+bolts_pack					= 1, 1
+batteries_dead				= 2, 1
+detector_geiger				= 1, 0.5
+detector_radio				= 1, 0.5
+detector_simple				= 1, 0.5
+device_flashlight			= 1, 0.5
+device_pda_1				= 1, 0.5
+lead_box					= 1, 0.5
+af_iam						= 1, 0.5
+af_oxygen_tank_1			= 1, 0.5
+af_mask_filter_1			= 1, 0.5
+device_glowstick			= 1, 0.5
+device_glowstick_red		= 1, 0.5
+device_glowstick_orange		= 1, 0.5
+device_glowstick_blue		= 1, 0.5
+wpn_binoc_inv				= 1, 0.5
+itm_actor_backpack			= 1, 0.5
+
+;[Camping]
+army_bowler					= 1, 1
+compression_bag				= 1, 1
+cooking						= 1, 1
+fieldcooker					= 1, 1
+itm_sleepbag				= 1, 1
+itm_tent					= 1, 1
+
+[supplies_2]:supplies_1
+;[Pistols]
+wpn_aps_bas					= 1, 0.5
+wpn_oc33					= 1, 0.5
+wpn_sr1m					= 1, 0.5
+
+;[Rifle]
+wpn_mp153_bas				= 1, 0.5
+wpn_ak74_n					= 1, 0.5
+wpn_ak74m_n					= 1, 0.5
+
+;[Headgear]
+helm_ppm88					= 1, 0.5
+
+;[Outfits]
+trenchcoat_dolg_brown_outfit	= 1, 0.5
+dolg_red_outfit					= 1, 0.5
+specops_dolg_outfit				= 1, 0.5
+dolg_voin_outfit				= 1, 0.5
+nbc_dolg_outfit					= 1, 0.5
+dolg_specops_red_outfit			= 1, 0.5
+dolg_pantsir_outfit				= 1, 0.5
+light_dolg_outfit				= 1, 0.5
+
+;[Backpacks]
+equ_small_pack				= 1, 0.5
+
+;[Devices]
+device_torch_dummy			= 1, 0.5
+
+[supplies_3]:supplies_2
+;[Rifle]
+wpn_rpk74					= 1, 0.5
+wpn_rpk						= 1, 0.5
+wpn_akm_bas					= 1, 0.5
+wpn_sks_molot				= 1, 0.5
+wpn_sr2_veresk				= 1, 0.5
+
+;[Explosives]
+grenade_rgn_impact			= 1, 0.5
+grenade_rgo_impact			= 1, 0.5
+
+;[Melee]
+wpn_knife6					= 1, 0.5
+
+;[Headgear]
+helm_protective				= 1, 0.5
+helm_tactic					= 1, 0.5
+
+;[Outfits]
+dolg_scientific_outfit		= 1, 0.5
+dolg_scientific_red_outfit	= 1, 0.5
+dolg_scientific_wood_outfit	= 1, 0.5
+
+;[Backpacks]
+equ_small_military_pack		= 1, 0.5
+
+;[Devices]
+device_pda_2				= 1, 0.5
+detector_advanced			= 1, 0.5
+device_torch_nv_1			= 1, 0.5
+af_aac						= 1, 0.5
+af_oxygen_tank_2			= 1, 0.5
+af_mask_filter_2			= 1, 0.5
+
+[supplies_4]:supplies_3
+;[Rifle]
+wpn_groza					= 1, 0.5
+wpn_saiga12s				= 1, 0.5
+
+;[Headgear]
+helm_exo					= 1, 0.5
+
+;[Outfits]
+dolg_proto_exo_outfit		= 1, 0.5
+dolg_heavy_redline_outfit	= 1, 0.5
+dolg_heavy_outfit			= 1, 0.5
+dolg_exolight_outfit		= 1, 0.5
+exo_dolg_outfit				= 1, 0.5
+exo_dolg_urban_outfit		= 1, 0.5
+exo_dolg_red_outfit			= 1, 0.5
+exo_dolg_wood_outfit		= 1, 0.5
+
+;[Backpacks]
+equ_tourist_pack			= 1, 0.5
+exo_power_supply_military	= 1, 0.5
+
+;[Devices]
+batteries_exo				= 1, 0.5
+device_torch_nv_2			= 1, 0.5
+
+[supplies_5]:supplies_4
+;[Unique]
+wpn_groza_nimble			= 1, 0.25
+wpn_pkm_zenit_siber			= 1, 0.25
+wpn_pkm_zenit_shorty		= 1, 0.25
+wpn_ak105_bas_shakal		= 1, 0.25
+wpn_kiparis_m2				= 1, 0.25
+wpn_ak74u_tac				= 1, 0.25
+
+;[Rifle]
+wpn_vepr					= 1, 0.5
+wpn_pkm_siber				= 1, 0.5
+wpn_svd_m1					= 1, 0.5
+
+;[Explosions]
+wpn_rg-6					= 1, 0.5
+
+;[Headgear]
+helm_ranger					= 1, 0.5
+
+;[Outfits]
+dolg_exo_outfit				= 1, 0.5
+dolg_heavy_proto_exo_outfit	= 1, 0.5
+dolg_nosorog_outfit			= 1, 0.5
+dolg_exoseva_outfit			= 1, 0.5
+
+;[Backpacks]
+equ_military_pack			= 1, 0.5
+
+;[Devices]
+device_pda_3				= 1, 0.5
+detector_elite				= 1, 0.5
+device_torch_nv_3			= 1, 0.5
+af_aam						= 1, 0.5
+af_oxygen_tank_3			= 1, 0.5
+af_mask_filter_3			= 1, 0.5
