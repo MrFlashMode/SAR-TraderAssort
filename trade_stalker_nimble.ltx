@@ -1,0 +1,57 @@
+#include "presets\trade_discounts.ltx"
+#include "presets\trade_presets.ltx"
+
+[trader]
+buy_condition = trade_generic_buy 
+sell_condition = trade_generic_sell
+buy_supplies = supplies_1
+buy_item_condition_factor = 0.50
+buy_item_exponent = 2.25
+sell_item_exponent = 0.75
+
+discounts = discount_trasher
+
+[trade_generic_buy]:none
+
+[trade_generic_sell]:none
+
+[supplies_1]:common_stock
+;--Pistols
+wpn_desert_eagle_nimble		= 1, 1
+wpn_fnx45			= 1, 1
+wpn_usp_nimble			= 1, 1
+
+;--Shotguns
+wpn_protecta_aim		= 1, 1
+wpn_spas12_nimble		= 1, 1
+wpn_toz34_mark4			= 1, 1
+wpn_toz34_bull			= 1, 1
+
+;--SMGs
+wpn_mp5_nimble			= 1, 1
+wpn_kiparis_m1			= 1, 1
+wpn_vz61_scorpion_m1		= 1, 1
+
+;--Assault Rifles
+wpn_pkm_zulus			= 1, 1
+wpn_ak74_rpk			= 1, 1
+wpn_ak74m_pka			= 1, 1
+wpn_ak74u_snag			= 1, 1
+wpn_vintorez_1pn93		= 1, 1
+wpn_vintorez_nimble		= 1, 1
+wpn_fn2000_nimble		= 1, 1
+
+;--Sniper Rifles
+wpn_svd_nimble			= 1, 1
+
+;Outfits
+stalker_autumn_outfit		= 1, 1
+stalker_bear_outfit		= 1, 1
+stalker_drought_outfit		= 1, 1
+stalker_graphite_outfit		= 1, 1
+stalker_predator_outfit		= 1, 1
+stalker_salamander_outfit	= 1, 1
+stalker_tigerstripe_outfit	= 1, 1
+nomad_outfit			= 1, 1
+travel_outfit			= 1, 1
+wastelander_outfit		= 1, 1
